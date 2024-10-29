@@ -3,16 +3,17 @@ module.exports = {
   content: ["./**/*.html"],
   theme: {
     fontFamily: {
-        body: ['Crimson Text', 'serif'],
+        body: ['Radley', 'serif'],
         hero: ['Playfair Display', 'serif'],
     },
-    color: {
-        'classic-orange': '#ee7214',
-        'classic-green': '#527853',
-        'cl-primary': '#f9e8d9',
-        'soft-orange': '#f7b787',
+    extend: {
+        colors: {
+            'classicOrange': '#ee7214',
+            'classicGreen': '#527853',
+            'primary': '#f9e8d9',
+            'softOrange': '#f7b787',
+        },
     },
-    extend: {},
   },
   plugins: [],
 }
