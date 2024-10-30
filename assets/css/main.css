@@ -17,9 +17,5 @@
     h2 {
         @apply font-bold;
     }
-    img {
-        @apply w-full;
-        @apply block;
-        @apply object-cover;
-    }
+
 }
