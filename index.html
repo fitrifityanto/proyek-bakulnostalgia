@@ -3,8 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakul Nostalgia</title>
     
-<!--    My Own styles-->
-<!--    <link rel="stylesheet" href="assets/css/app.css">-->
+<!--    for styles-->
     <link href="./assets/css/output.css" rel="stylesheet">
 
 <!--    my Google Fonts-->
@@ -21,58 +20,40 @@
 </head>
 
 <body>
-<header>
-    <div class="max-w-5xl flex justify-around items-center px-4 mx-auto">
-        <div class="w-32">
-            <img src="assets/image/logo-bakulnostalgia-forweb-fix.png" alt="logo bakulnostalgia">
+<header class="min-h-screen flex flex-col gap-4 border border-4">
+    <div class="flex justify-center items-center">
+        <div class="max-w-screen-lg w-full flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center">
+            <div class="w-32">
+                <img src="assets/image/logo-bakulnostalgia-forweb-fix.png" alt="logo bakulnostalgia">
+            </div>
+            <nav class="text-lg">
+                <ul class="pl-0 flex flex-wrap justify-center gap-8">
+                    <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="./">Beranda</a></li>
+                    <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Tentang kami</a></li>
+                    <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Produk</a></li>
+                    <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Hubungi kami</a></li>
+                </ul>
+            </nav> 
         </div>
-        <nav>
-            <ul class="pl-0 flex justify-center gap-8">
-                <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="./">Beranda</a></li>
-                <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Tentang kami</a></li>
-                <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Produk</a></li>
-                <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Hubungi kami</a></li>
-            </ul>
-        </nav> 
     </div>
    
 <!--hero-->
-    <div class="w-full flex">
-        <div class="basis-5/12 flex flex-col gap-4 items-center justify-center">
-            <div class="relative">
-                <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-none w-full h-96 relative">
-                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-                <div class="absolute inset-0 backdrop-blur-lg"></div>
-                <div class="absolute inset-0 flex flex-col justify-center gap-4 px-8">
-                    <h1 class="text-white max-w-[350px]">Hadirkan kenangan nostalgia indahmu.</h1>
-                    <p class="text-xl text-white max-w-[400px]">Manjakan indra perasa Anda dengan cita rasa klasik yang tak lekang oleh waktu, dan biarkan kenangan indah bermunculan</p>
-                    <button class="self-start px-4 py-2 text-xl bg-classicOrange text-white border-white border-2">Jelajahi koleksi</button>
-                </div>
+    <div class="w-full flex flex-col lg:flex-row">
+        <div class="lg:basis-5/12 order-last lg:order-first flex flex-col gap-4 items-center justify-center relative">
+            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-none w-full h-96 lg:min-h-full relative">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="absolute inset-0 backdrop-blur-lg"></div>
+            <div class="absolute inset-0 w-full px-8 flex flex-col justify-center items-start md:items-center lg:items-start gap-4">
+                <h1 class="text-white">Hadirkan kenangan nostalgia indahmu.</h1>
+                <p class="text-lg text-white md:text-center lg:text-start">Manjakan indra perasa Anda dengan cita rasa klasik yang tak lekang oleh waktu, dan biarkan kenangan indah bermunculan</p>
+                <button class="px-4 py-2 text-xl bg-classicOrange text-white border-white border-2">Jelajahi koleksi</button>
             </div>
         </div>
-        <div class="basis-7/12 relative">
-            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-cover w-full h-96 relative">
+        <div class="lg:basis-7/12 order-first lg:order-last relative">
+            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-cover w-full h-96 lg:min-h-full relative">
             <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         </div>
     </div>
-<!--
-    <div class="w-full">
-        <div class="w-full flex items-center gap-8">
-            <div class="w-full relative">
-                <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-cover w-full h-96 relative">
-                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-                
-                <div class="absolute inset-0 max-w-screen-md flex flex-col gap-4 items-center justify-center mx-auto">
-                    <h1 class="text-white">Hadirkan kenangan nostalgia indahmu.</h1>
-                    <p class="text-xl text-white text-center">Manjakan indra perasa Anda dengan cita rasa klasik yang tak lekang oleh waktu, dan biarkan kenangan indah bermunculan</p>
-                    <button class="px-4 py-2 text-xl bg-classicOrange text-white border-white border-2">Jelajahi koleksi</button>
-            </div>
-            </div>
-
-        </div>
-    </div>
--->
-    
 </header>
 
 
