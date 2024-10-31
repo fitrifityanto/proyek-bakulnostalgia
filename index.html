@@ -17,12 +17,14 @@
     
 <!-- Font awesome 5.15.4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
-<header class="max-h-screen flex flex-col gap-4">
+<header class="flex flex-col gap-4">
     <div class="flex justify-center items-center">
-        <div class="max-w-screen-lg w-full flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center">
+        <div class="max-w-screen-lg w-full flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center md:px-8">
             <div class="w-28">
                 <img src="assets/image/logo-bakulnostalgia-forweb-fix.png" alt="logo bakulnostalgia">
             </div>
@@ -38,35 +40,91 @@
     </div>
    
 <!--hero-->
-    <div class="w-full self-stretch flex flex-col lg:flex-row">
-        <div class="lg:basis-5/12 order-last lg:order-first flex flex-col gap-4 items-center justify-center relative">
-            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-none w-full h-96 md:h-full relative">
+    <div class="w-full flex flex-col lg:flex-row">
+        <div class="basis-5/12 flex flex-col gap-4 items-center justify-center relative">
+            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-cover w-full md:h-full h-[450px] relative">
             <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-            <div class="absolute inset-0 backdrop-blur-lg"></div>
+            <div class="absolute inset-0 backdrop-blur-sm "></div>
             <div class="absolute inset-0 w-full px-8 flex flex-col justify-center items-start md:items-center lg:items-start gap-4">
-                <h1 class="text-white lg:max-w-[400px]">Hadirkan kenangan nostalgia indahmu.</h1>
-                <p class="text-lg text-white md:text-center lg:text-start">Manjakan indra perasa Anda dengan cita rasa klasik yang tak lekang oleh waktu, dan biarkan kenangan indah bermunculan</p>
-                <button class="px-4 py-2 text-xl bg-classicOrange text-white border-white border-2">Jelajahi koleksi</button>
+                <h1 class="text-white text-3xl md:text-4xl lg:max-w-[400px] ">Hadirkan kenangan nostalgia indahmu.</h1>
+                <p class="text-lg md:text-xl text-white md:text-center lg:text-start">Manjakan indra perasa Anda dengan cita rasa klasik yang tak lekang oleh waktu, dan biarkan kenangan indah bermunculan</p>
+                <button class="px-4 py-2 text-lg md:text-xl bg-classicOrange text-white rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)]">Jelajahi koleksi</button>
             </div>
         </div>
-        <div class="lg:basis-7/12 order-first lg:order-last relative">
-            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-cover w-full h-96 md:h-full relative">
+        <div class="basis-7/12 relative">
+            <img src="assets/image/ph-philips.jpg" alt="ph philips" class="object-cover w-full h-full relative">
             <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         </div>
     </div>
 </header>
 
+<main class="flex flex-col">
+    <section class="bg-primary py-8 ">
+        <div><h2 class="md:text-center text-xl md:text-2xl px-4 py-8">Jelajahi koleksi barang antik berdasarkan kategori</h2>
+        </div>
+        <div class="md:max-w-3xl lg:max-w-5xl flex-wrap flex justify-center gap-5 mx-auto">        
+            <div class="basis-2/5 md:basis-1/5 flex flex-col gap-2 bg-primary border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)] px-4 pt-4 pb-10">
+                <img src="assets/image/radio-l6.png" class="object-cover max-h-40 aspect-square">
+                <div class="text-center">Radio transistor</div>
+            </div>
+        
+            <div class="basis-2/5 md:basis-1/5 flex flex-col gap-2 bg-primary border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)] px-4 pt-4 pb-10">
+                <img src="assets/image/radio-tabung-hitam.png" class="object-cover max-h-40 aspect-square">
+                <div class="text-center">Radio Tabung</div>
+            </div>
+            <div class="basis-2/5 md:basis-1/5 flex flex-col gap-2 bg-primary border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)] px-4 pt-4 pb-10">
+                <img src="assets/image/ph-philips.jpg" class="object-cover max-h-40 aspect-square">
+                <div class="text-center">Turntable antik</div>
+            </div>
+        
+            <div class="basis-2/5 md:basis-1/5 flex flex-col gap-2 bg-primary border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)] px-4 pt-4 pb-10">
+                <img src="assets/image/mesin-jahit-hijau.png" class="object-cover max-h-40 aspect-square">
+                <div class="text-center">Lawasan</div>
+            </div>
+        </div>
+    </section>
+    <div class="w-full h-9 bg-classicGreen"></div>   
+    <section class="bg-primary py-16">
+        <div class="flex flex-col lg:flex-row justify-center gap-6 flex-wrap px-4">
+            <div class="basis-2/5 flex flex-col gap-2 bg-softOrange border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)] overflow-hidden">
+                <img src="assets/image/ph-philips.jpg" class="object-cover w-full max-h-40 aspect-video">
+                <div class="px-4 py-8">
+                    <h3 class="text-lg">Turntable philips</h3>
+                    <div class="text-sm md:text-base"> turntable ini menawarkan pengalaman mendengarkan yang otentik, dengan kemampuan untuk memainkan berbagai jenis vinyl.</div>
+                </div>
+            </div>
+            <div class="basis-2/5 flex flex-col gap-2 bg-softOrange border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)] overflow-hidden">
+                <img src="assets/image/mesin-jahit-hijau-img.jpg" class="object-cover w-full max-h-40 aspect-video">
+                <div class="px-4 py-8">
+                    <h3 class="text-lg">Mesin jahit antik</h3>
+                    <div class="text-sm md:text-base"> Mesin jahit antik berwarna hijau ini menyimpan banyak cerita di balik setiap jahitannya.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-softOrange py-16 px-8">
+        <div class="max-w-screen-lg flex flex-col md:flex-row mx-auto bg-primary border-classicGreen border-2 rounded-lg shadow-[4px_4px_8px_rgba(82,120,83)]">
+            <div class="basis-2/4 flex flex-col md:flex-row gap-2 overflow-hidden">
+                <img src="assets/image/gallery-bakulnostalgia.jpg" class="object-cover w-full max-h-96 aspect-square">
+            </div>    
+            <div class="basis-2/4 px-4 py-8 flex flex-col gap-8">
+                <h3 class="text-xl">Bakulnostalgia</h3>
+                <div>       
+                    <p>Bakulnostalgia adalah surga bagi para pecinta barang antik dan radio antik. Kami menawarkan koleksi unik dan bersejarah yang akan membawa Anda bernostalgia ke masa lalu.</p>
+                <p>Lokasi: Salatiga, Jawa Tengah</p></div>
+            </div>
+        </div>
+    </section>
+</main>
 
-
-<!--
 <footer class="bg-classicGreen flex flex-col items-center py-2 text-white">
-    <div>Bakulnostalgia &copy; 2024</div>
+    <div>Bakulnostalgia &copy; <span id="currentYear"></span></div>
     <div>
         <ul class="pl-0 my-2 flex justify-center gap-4">
             <li class="text-white text-xl"><a href="#"><i class="fab fa-youtube"></i></a></li>
             <li class="text-white text-xl"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="text-white text-xl"><a href="#"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </div>
 </footer>
--->
 </body>
