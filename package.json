@@ -4,7 +4,7 @@
   "description": "proyek bakulnostalgia",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/output.css --minify --watch",
+    "start": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/output.css --minify --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fitriningtyas",

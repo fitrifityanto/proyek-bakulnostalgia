@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakul Nostalgia</title>
+    <title>Bakul Nostalgia (Demo v2)</title>
+    
+<!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bakulnostalgia (Demo_v2)">
+    <meta property="og:description" content="Bakulnostalgia adalah surga bagi para pecinta barang antik dan radio antik. Kami menawarkan koleksi unik dan bersejarah yang akan membawa Anda bernostalgia ke masa lalu.">
+
+<!--    my favicon-->
+    <link rel="icon" type="image/png" href="assets/image/favicon.png">
     
 <!--    for styles-->
     <link href="./assets/css/output.css" rel="stylesheet">
@@ -24,18 +31,36 @@
 <body>
 <header class="flex flex-col gap-4">
     <div class="flex justify-center items-center">
-        <div class="max-w-screen-lg w-full flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center md:px-8">
+        
+        <div id="hiddenBox" class="w-full h-screen backdrop-blur-sm bg-black/20 absolute top-0 right-0 z-10" style="display: none"></div>
+        
+        <div class="max-w-screen-lg w-full flex justify-between items-center px-8">
             <div class="w-28">
                 <img src="assets/image/logo-bakulnostalgia-forweb-fix.png" alt="logo bakulnostalgia">
             </div>
-            <nav class="text-lg">
+            <nav class="text-lg hidden md:block">
                 <ul class="pl-0 flex flex-wrap justify-center gap-8">
-                    <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="./">Beranda</a></li>
+                    <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="./">Home</a></li>
                     <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Tentang kami</a></li>
                     <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Produk</a></li>
                     <li class="transition ease-in-out duration-300 px-4 hover:-translate-y-1 hover:bg-classicOrange hover:text-white"><a href="#">Hubungi kami</a></li>
                 </ul>
-            </nav> 
+            </nav>
+            <div id="menuMobile" class="absolute top-0 right-0 w-[90vw] h-screen bg-primary z-20 animate-fade" style="display: none">
+                <div class="ps-8 pt-[5rem]">
+                     <ul class="flex flex-col gap-4">
+                        <li><h2><a href="./"> Home</a></h2></li>
+                        <li><h2><a href="./"> Tentang kami</a></h2></li>              
+                        <li><h2><a href="./"> Produk</a></h2></li> 
+                         <li><h2><a href="./"> Hubungi kami</a>
+                         </h2></li>
+                    </ul>
+                </div>
+            </div>              
+            <div id="mobileIcon" class="md:hidden cursor-pointer z-50">
+                <img src="assets/image/icon/bars-solid.svg" class="h-5 w-5"> 
+                <img src="assets/image/icon/xmark-solid.svg" class="h-5 w-5" style="display: none">
+            </div>
         </div>
     </div>
    
