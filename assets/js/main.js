@@ -1,6 +1,10 @@
-const currentYear = new Date().getFullYear()
+const createdYear = 2024;
+const currentYear = new Date().getFullYear();
 
-document.getElementById('currentYear').textContent = currentYear;
+if (createdYear === currentYear) {
+  document.getElementById('currentYear').textContent = createdYear;
+} else document.getElementById('currentYear').textContent = currentYear;
+
 
 const menuMobile = document.getElementById('menuMobile');
 const hiddenBox = document.getElementById('hiddenBox');
