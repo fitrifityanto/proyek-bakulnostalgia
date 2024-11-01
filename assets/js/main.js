@@ -2,8 +2,8 @@ const createdYear = 2024;
 const currentYear = new Date().getFullYear();
 
 if (createdYear === currentYear) {
-  document.getElementById('currentYear').textContent = createdYear;
-} else document.getElementById('currentYear').textContent = currentYear;
+  document.getElementById('currentYear').textContent = currentYear;
+} else document.getElementById('currentYear').textContent = `${createdYear} - ${currentYear}`;
 
 
 const menuMobile = document.getElementById('menuMobile');
