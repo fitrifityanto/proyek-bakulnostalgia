@@ -1,6 +1,6 @@
 # Proyek Bakulnostalgia (Demo)
 
-**[Update]** saya menandai dengan tag v2.0.0 sebagai update untuk proyek Bakulnostalgi homepage (Demo) ini.
+**[Update]** saya menandai dengan tag v2.0.0 sebagai update untuk proyek Bakulnostalgia homepage (Demo) ini.
 
 perubahan ada pada penggantian css (vanila) ke Tailwindcss. dan penggantian ini juga mengubah layout dan desain pada homepage Bakulnostagia (demo).
 
@@ -19,12 +19,15 @@ perlu diketahui bahwa Proyek ini berawal dari tugas akhir pembelajaran kelas Bel
     <img src="https://images2.imgbox.com/59/e0/Vrh58dFZ_o.png">
     
 <br/>
+
 ### Hal-hal tentang homepage Bakul Nostalgia:
+
 - HTML nya sudah menerapkan elemen semantic (*header*, *main*, *article*, *aside*, dan *footer*)
 - layout menggunakan flexbox
 - Responsif
 
 <br/>
+
 **Code Color**:
 
 1: #f9e8d9
